@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+:root {
+    --amarillo-meli: #EAC926;
+    --azul-meli: #03264C;
+    --gris-claro-meli: #ebebeb;
+    --gris-oscuro-meli: #666;
+    --celeste-meli: #1259c3;
+    --blanco-meli: #fff;
+    --verde-descuento-meli: #00a650;
+}
+
+.header-inicio {
+    background-color: #EAC926;
+}
+
+body{
+    background-color: var(--gris-claro-meli);
+}
+
+.logo {
+    width: 50vw;
+}
+
+.logo-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.busqueda-container{
+    width: 50vw;
+}
+
+.barra-busqueda {
+    width: 60%;
+}
+
+main {
+    text-align: center; 
+    min-height: 100vh;
+}
+
+.article-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+.article-container img {
+    width: 100px;
+    margin: 10px 0px 10px 0px;
+}
+
+.article-container h4 {
+    font-size: 16px;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+
+}
+
+.descuento {
+    color: #00a650;
+    width: 70%;
+}
+
+
+
+.titulares {
+    font-size: 24px;
+}
+
+.burger-menu {
+    width: 20px;
+    height: 20px;
+    background-color: #1259c3;
+    text-align: center;
+
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.section-container {
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.titulitos {
+    font-size: 15px;
+    margin: 10px 0px 0px 0px;
+}
+
+.texto {
+    margin: 0px 0px 15px 0px;
+}
+
+.Copyright {
+    justify-content: center;
+    text-align: center;
+}
+
+
+.icono-comprar {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+.ofertas {
+    margin: 0px 0px 10px 0px;
+}
+
+.cuenta {
+    margin: 0px 0px 10px 0px;
+}
+
+.fa-solid {
+    color: #1259c3;
+    transition-property: var(--celeste-meli);
+    transition-duration: 0.5s;
+}
+
+.fa-solid:hover {
+    color: #03264C;
+}
+
+.icono-nav {
+    color: #03264C
+}
+
+.fa-truck {
+    color: #00a650;
+}
+
+.caja-grande {
+    border: 1px solid var(--gris-claro-meli);
+    position: relative;
+    flex-wrap: row wrap;
+    width: 90vw;
+    background-color: var(--blanco-meli);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.caja-grande:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.caja {
+    display: none;
+    border-top: 1px solid var(--gris-claro-meli);
+    padding: 15px 0px;
+    position: relative;
+    flex-flow: row wrap;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.caja-grande:hover .caja {
+    display: flex;
+}
+
+
+article {
+    margin-bottom: 10px;
+}
+
+.truck-container {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 0.3s ease;
+}
+
+.truck-container:hover {
+    transform: rotate(-90deg);
+}
+
+
+footer{
+    height: auto;
+}
+
+@media (min-width: 361px ) {
+    .caja-grande{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 46vw;
+    }
+    .logo{
+        width: 30%;
+    }
+    .barra-busqueda{
+        width: 30%;
+    }
+    .icono-comprar{
+        width: 30%;
+    }
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .section-container{
+        flex-flow: row nowrap;
+    }
+  }
+
+@media (min-width: 769px ) {
+    .caja-grande{
+        width: 24vw;
+    }
+    .logo{
+        width: 33%;
+    }
+    .barra-busqueda{
+        width: 33%;
+    }
+  }
+ 
