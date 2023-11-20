@@ -26,12 +26,13 @@ body{
 
 .logo {
     width: 50vw;
+    margin-right: 10px;
 }
 
 .logo-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
 }
@@ -155,8 +156,15 @@ main {
 
 
 .icono-comprar {
-    text-align: center;
-    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.icono-comprar span {
+    margin-left: 5px; 
+}
+.busqueda-y-compras {
+    display: flex;
+    align-items: center;
 }
 
 .ofertas {
@@ -279,3 +287,8 @@ footer{
     }
   }
  
+@media (max-width: 1024px) {
+    .boton-hamburguesa {
+      display: block;
+    }
+}
